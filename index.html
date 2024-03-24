@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nixi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="Icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>Ni</span>xi</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Saurabh</span> <br> Jaiswar From Mumbai</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpeg">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias est praesentium a tempora
+                        pariatur nobis facere beatae consequuntur vitae, rem debitis sint repellendus dicta minus
+                        impedit quae, corrupti quaerat consectetur. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Ea, distinctio!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Frontend Developer</li>
+                            <li><span>2023-24</span><br>Work In Kanalytics as a Content Intelligence Executive</li>
+                            <li><span>2022-23</span><br>Web development Course </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>BSC-(IT) University of Mumbai</li>
+                            <li><span>2018</span><br>HSC</li>
+                            <li><span>2016</span><br>SSC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sevicess section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus dicta unde officia a
+                        exercitationem laborum alias suscipit natus totam doloribus?</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus dicta unde officia a
+                        exercitationem laborum alias suscipit natus totam doloribus?</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus dicta unde officia a
+                        exercitationem laborum alias suscipit natus totam doloribus?</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio  -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The App connect s you to the talented people around the world.
+                            download it from play store.
+                        </p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work2.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The App connect s you to the talented people around the world.
+                            download it from play store.
+                        </p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work3.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The App connect s you to the talented people around the world.
+                            download it from play store.
+                        </p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------------------------contact-------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>sjsaurabh082@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9967672613</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/9967672613" target="_blank"><i class="fa-brands fa-whatsapp" style="color: rgb(58, 123, 6);"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram" style="color: #8a3700;"></i></a>
+                        <a href="https://www.linkedin.com/in/saurabh-jaiswar-591053247/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter" style="color: #247dc2;"></i></a>
+                    </div>
+                    <a href="Saurabhweb.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="8498f138-9391-4701-ac13-50ac6db7ccc1">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Nixi. Made with <i class="fa-solid fa-heart"></i> by Saurabh </p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
